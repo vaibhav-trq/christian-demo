@@ -1,0 +1,26 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "path": "components/data",
+      "type": "data"
+    },
+    {
+      "path": "components/web",
+      "type": "web",
+      "output": "./build",
+      "install": "yarn",
+      "build": [
+        "yarn build"
+      ],
+      "watch": "yarn start"
+    },
+    {
+      "path": "components/api",
+      "type": "api",
+      "install": "yarn",
+      "watch": "yarn dev",
+      "start": "yarn start"
+    }
+  ]
+}
