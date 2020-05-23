@@ -22,7 +22,7 @@ class RecipeForm extends React.Component {
   async handleSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/data', {
+      const response = await fetch('http://christian-demo-x11jbj-api.platter-app.com/data', {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'

@@ -19,7 +19,7 @@ class App extends Component {
     };
 
     async refreshData() {
-      const res = await fetch('http://localhost:3001/data');
+      const res = await fetch('http://christian-demo-x11jbj-api.platter-app.com/data');
       const data = await res.json();
       this.setState({ recipes: data })
     }
